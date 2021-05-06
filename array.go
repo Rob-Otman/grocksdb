@@ -1,5 +1,5 @@
 package grocksdb
-
+// #include "stdlib.h"
 import "C"
 import (
 	"reflect"
