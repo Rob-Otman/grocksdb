@@ -1,10 +1,11 @@
 package grocksdb
-// #include "stdlib.h"
+
+/*
+#include <stdlib.h>
+*/
 import "C"
-import (
-	"reflect"
-	"unsafe"
-)
+import "reflect"
+import "unsafe"
 
 type charsSlice []*C.char
 type sizeTSlice []C.size_t
