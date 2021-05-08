@@ -1,4 +1,11 @@
 #!/bin/bash
+
+if [ "$#" -eq 1 ]
+then
+  echo "Oops, I just saved you from deleting your /bin folder.  Please provide install prefix as an argument."
+  exit
+fi
+
 set -eo pipefail
 
 DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
